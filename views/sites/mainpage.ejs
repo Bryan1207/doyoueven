@@ -2,11 +2,31 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>Do you even/MainPage</title>
+</head>
+	
 
-	<title>Do you even/MainPage</title>
 
 	<body id="mainpage">
-<h1>MainPage</h1>
+      
+      <h1>MainPage</h1>
+
+ <form>
+           <input type="text" placeholder="Search..." required>
+           <input type="button" value="Search">
+ </form>
+
+<form method="post" action="/posts" id="center">
+      <div>
+           <input type="text" name="comment[user]" placeholder="UserName">
+      </div>
+
+      <div>
+  <textarea name='comment[message]' id='Comment' placeholder="Comment"></textarea><br />
+      </div>
+      <button>SAVE</button>
+    </form>
+
 
 </body>
 </html>

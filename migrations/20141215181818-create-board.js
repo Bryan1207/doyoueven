@@ -11,6 +11,9 @@ module.exports = {
       name: {
         type: DataTypes.STRING
       },
+      Question: {
+        type: DataTypes.STRING
+      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE

@@ -1,1 +1,13 @@
-css
+#ThreadPage {
+	background-color: gray;
+}
+
+#mainpage {
+	background-color: purple;
+}
+
+#homeSignup {
+	background-color: teal;
+}
+
+h1 {text-align: center;}

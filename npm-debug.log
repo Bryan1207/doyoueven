@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json Doyoueven@1.0.0 No description
+5 warn package.json Doyoueven@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/Users/bryanhernandez/Desktop/Doyoueven',
+7 verbose install   [ 'body-parser', 'ejs', 'express', 'pg', 'sequelize' ] ]
+8 info preinstall Doyoueven@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping body-parser@^1.10.0 /Users/bryanhernandez/Desktop/Doyoueven
+11 verbose already installed skipping ejs@^1.0.0 /Users/bryanhernandez/Desktop/Doyoueven
+12 verbose already installed skipping express@^4.10.6 /Users/bryanhernandez/Desktop/Doyoueven
+13 verbose already installed skipping pg@^4.1.1 /Users/bryanhernandez/Desktop/Doyoueven
+14 verbose already installed skipping sequelize@^2.0.0-rc3 /Users/bryanhernandez/Desktop/Doyoueven
+15 silly resolved []
+16 info build /Users/bryanhernandez/Desktop/Doyoueven
+17 verbose linkStuff [ false, false, false, '/Users/bryanhernandez/Desktop' ]
+18 info linkStuff Doyoueven@1.0.0
+19 verbose linkBins Doyoueven@1.0.0
+20 verbose linkMans Doyoueven@1.0.0
+21 verbose rebuildBundles Doyoueven@1.0.0
+22 verbose rebuildBundles [ '.DS_Store',
+22 verbose rebuildBundles   '.bin',
+22 verbose rebuildBundles   'body-parser',
+22 verbose rebuildBundles   'connect',
+22 verbose rebuildBundles   'ejs',
+22 verbose rebuildBundles   'express',
+22 verbose rebuildBundles   'pg',
+22 verbose rebuildBundles   'sequelize',
+22 verbose rebuildBundles   'st' ]
+23 verbose rebuild bundle /Users/bryanhernandez/Desktop/Doyoueven/node_modules/connect
+24 info build /Users/bryanhernandez/Desktop/Doyoueven/node_modules/connect
+25 info preinstall connect@3.3.3
+26 verbose linkStuff [ false,
+26 verbose linkStuff   false,
+26 verbose linkStuff   false,
+26 verbose linkStuff   '/Users/bryanhernandez/Desktop/Doyoueven/node_modules' ]
+27 info linkStuff connect@3.3.3
+28 verbose linkBins connect@3.3.3
+29 verbose linkMans connect@3.3.3
+30 verbose rebuildBundles connect@3.3.3
+31 verbose rebuildBundles [ 'debug', 'finalhandler', 'parseurl', 'utils-merge' ]
+32 info install connect@3.3.3
+33 info postinstall connect@3.3.3
+34 verbose rebuild bundle /Users/bryanhernandez/Desktop/Doyoueven/node_modules/st
+35 info build /Users/bryanhernandez/Desktop/Doyoueven/node_modules/st
+36 info preinstall st@0.5.2
+37 verbose linkStuff [ false,
+37 verbose linkStuff   false,
+37 verbose linkStuff   false,
+37 verbose linkStuff   '/Users/bryanhernandez/Desktop/Doyoueven/node_modules' ]
+38 info linkStuff st@0.5.2
+39 verbose linkBins st@0.5.2
+40 verbose link bins [ { st: 'bin/server.js' },
+40 verbose link bins   '/Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin',
+40 verbose link bins   false ]
+41 verbose linkMans st@0.5.2
+42 verbose rebuildBundles st@0.5.2
+43 verbose rebuildBundles [ 'async-cache', 'bl', 'fd', 'graceful-fs', 'mime', 'negotiator' ]
+44 error Error: EACCES, unlink '/Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin/st'
+44 error  { [Error: EACCES, unlink '/Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin/st']
+44 error   errno: 3,
+44 error   code: 'EACCES',
+44 error   path: '/Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin/st' }
+45 error Please try running this command again as root/Administrator.
+46 error System Darwin 14.0.0
+47 error command "node" "/usr/local/bin/npm" "install"
+48 error cwd /Users/bryanhernandez/Desktop/Doyoueven
+49 error node -v v0.10.33
+50 error npm -v 1.4.28
+51 error path /Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin/st
+52 error code EACCES
+53 error errno 3
+54 error stack Error: EACCES, unlink '/Users/bryanhernandez/Desktop/Doyoueven/node_modules/.bin/st'
+55 verbose exit [ 3, true ]

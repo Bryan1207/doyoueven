@@ -9,7 +9,15 @@ app.set("view engine", "ejs");
 
 // our root route
 app.get("/", function (req, res) {
-  res.render("sites/home.ejs");
+  res.render("sites/homeSignUp");
+});
+
+app.get("/mainpage", function (req, res) {
+  res.render("sites/mainpage");
+});
+
+app.get("/thread", function (req, res) {
+  res.render("sites/thread");
 });
 
 app.listen(3000, function () {

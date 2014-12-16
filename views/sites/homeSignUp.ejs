@@ -1,3 +1,4 @@
+<!--views/users/login.ejs-->
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,18 @@
 	<title>Do you even/SignUp</title>
 
 	<body id="homeSignUp">
-<h1>HomeSignup</h1>
+ <h1>The Login Page!</h1>
 
-</body>
+
+<form method="post" action="/users"id="center">
+      <div>
+        <input type="text" name="user[email]" placeholder="Email">
+      </div>
+      <div>
+        <input type="text" name="user[password]" placeholder="Password">
+      </div>
+      <button>Save </button>
+    </form>
+
+	</body>
 </html>

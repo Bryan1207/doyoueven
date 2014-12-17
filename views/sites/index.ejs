@@ -1,7 +1,9 @@
-<!--views/site/index.ejs-->
-<!DOCTYPE HTML>
+<!DOCTYPE <!DOCTYPE html>
 <html>
-<body>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>Do you even/MainPage</title>
+</head>
 <h1>Site index</h1>
   <% if (user) { %>
     Logged in as <%= user.email %><br>
@@ -15,5 +17,6 @@
       <a href="/sign_up">Sign Up</a>
     </div>
   <% } %>
+
 </body>
 </html>

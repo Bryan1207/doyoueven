@@ -26,3 +26,9 @@ h1 {text-align: center;}
 #login{
 	background-color: teal;
 }
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+

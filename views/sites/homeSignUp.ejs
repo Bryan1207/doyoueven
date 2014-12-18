@@ -1,13 +1,20 @@
 <!--views/site/index.ejs-->
 <!DOCTYPE HTML>
 <html>
+<head><link rel="stylesheet" type="text/css" href="stylesheet.css"></head>
+
 <body>
-<h1>Site index</h1>
+<img src="doyouevenbanner.png" class="displayed">
+<h1></h1>
+  
+
   <% if (user) { %>
     Logged in as <%= user.email %><br>
     <a href="/logout">Logout</a>
+  
+
   <% } else { %>
-    Welcome to our site
+   
     <div>
       <a href="/login">Log In </a>
     </div>
@@ -15,5 +22,7 @@
       <a href="/sign_up">Sign Up</a>
     </div>
   <% } %>
+
+
 </body>
 </html>

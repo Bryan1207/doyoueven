@@ -8,6 +8,9 @@ module.exports = {
         primaryKey: true,
         type: DataTypes.INTEGER
       },
+      userId:{
+        type: DataTypes.INTEGER
+      }
       name: {
         type: DataTypes.STRING
       },

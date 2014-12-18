@@ -3,7 +3,10 @@
 module.exports = {
   up: function(migration, DataTypes, done) {
     // add altering commands here, calling 'done' when finished
-    done();
+    migration.addColumn("boards", "userId", {
+          type: DataTypes.INTEGER
+
+     }).done(done)
   },
 
   down: function(migration, DataTypes, done) {

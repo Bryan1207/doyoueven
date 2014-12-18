@@ -83,6 +83,7 @@ app.post("/users", function (req, res) {
       // req.login is given by the passport
       req.login(user, function(){
         // after login redirect show page
+        console.log(user)
         console.log("Id: ", user.id)
         res.redirect('/users/' + user.id);
       });
@@ -90,6 +91,7 @@ app.post("/users", function (req, res) {
 });
 
 app.get("/users/:id", function (req, res) {
+  console.log("USERS SHOW")
   var id = req.params.id;
   db.user.find(id)
     .then(function (user) {
@@ -100,9 +102,9 @@ app.get("/users/:id", function (req, res) {
     })
 });
 
-// When someone wants the login page
-app.get("/login", function (req, res) {
-  res.render("users/login");
+ //When someone wants the login page
+ app.get("/login", function (req, res) {
+   res.render("users/login");
 });
 
 // Authenticating a user
@@ -112,26 +114,27 @@ app.post('/login', passport.authenticate('local', {
 }));
 
 app.get("/", function (req, res) {
-  console.log(req.user)
+  console.log("\n\n\nCURRENT USER",req.user);
   // req.user is the user currently logged in
 
   if (req.user) {
-    res.render("site/index", {user: req.user});
+    res.render("sites/homeSignUp", {user: req.user});
+    // res.render("sites/homeSignUp", {user: req.user});
   } else {
-    res.render("site/index", {user: false});
+    res.render("sites/homeSignUp", {user: false});
+     //res.render("sites/homeSignUp", {user: req.user});
   }
 });
 
-app.get("/logout", function (req, res) {
-  // log out
-  req.logout();
-  res.redirect("/");
-});
+ app.get("/logout", function (req, res) {
+   // log out
+   req.logout();
+   res.redirect("/");
+ });
 
 // our root route
-app.get("/", function (req, res) {
-  res.render("sites/homeSignUp");
-});
+//app.get("/", function (req, res) {
+//});
 
 app.get("/mainpage", function (req, res) {
   res.render("sites/mainpage");
@@ -139,6 +142,25 @@ app.get("/mainpage", function (req, res) {
 
 app.get("/thread", function (req, res) {
   res.render("sites/thread");
+});
+
+app.post("/board", function (req, res) {
+  //var thread = req.body.thread;
+  console.log(req.body);
+  //res.send("eh");
+  var thread = req.body.thread;
+  console.log(thread);
+  db.board.create({name: thread.message}).then(function(x){
+    res.send('eh');
+  });
+});
+
+app.get("/login", function (req, res) {
+  res.render("sites/login");
+});
+
+app.get("/index", function (req, res) {
+  res.render("sites/index");
 });
 
 app.post("/posts", function (req, res) {

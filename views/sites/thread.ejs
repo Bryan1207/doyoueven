@@ -7,5 +7,26 @@
 	<body id="ThreadPage">
 <h1>Thread</h1>
 
+<form method="post" action="/board" id="center">
+      <div>
+  <textarea name='thread[message]' id='Comment' placeholder="New Thread"></textarea><br />
+      </div>
+      <button>SAVE</button>
+    </form>
+
+
+    
+    <form method="post" action="/posts" id="center">
+      <div>
+           <input type="text" name="comment[user]" placeholder="UserName">
+      </div>
+
+      <div>
+  <textarea name='comment[message]' id='Comment' placeholder="Comment"></textarea><br />
+      </div>
+      <button>SAVE</button>
+    </form>
+
+</body>
 
 </html>

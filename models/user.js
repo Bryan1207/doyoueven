@@ -3,11 +3,38 @@
 var bcrypt = require("bcrypt");
 var passport = require("passport");
 var passportLocal = require("passport-local");
-
+      // id: {
+      //   allowNull: false,
+      //   autoIncrement: true,
+      //   primaryKey: true,
+      //   type: DataTypes.INTEGER
+      // },
+      // email: {
+      //   type: DataTypes.STRING
+      // },
+      // firstName: {
+      //   type: DataTypes.STRING
+      // },
+      // lastName: {
+      //   type: DataTypes.STRING
+      // },
+      // password_digest: {
+      //   type: DataTypes.STRING
+      // },
+      // BMI: {
+      //   type: DataTypes.STRING
+      // },
+      // userName: {
+      //   type: DataTypes.STRING
+      // },
 module.exports = function(sequelize, DataTypes) {
   var user = sequelize.define("user", {
     email: DataTypes.STRING,
-    password_digest: DataTypes.STRING
+    password_digest: DataTypes.STRING,
+    firstName: DataTypes.STRING,
+    lastName: DataTypes.STRING,
+    BMI: DataTypes.STRING,
+    userName: DataTypes.STRING
   }, {
     instanceMethods: {
       checkPassword: function (password) {
@@ -17,7 +44,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        this.hasMany(models.user);
+        // this.hasMany(models.user);
       },
       findByEmail: function (email) {
         return this.find({

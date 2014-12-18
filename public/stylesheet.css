@@ -3,7 +3,7 @@
 }
 
 #mainpage {
-	background-color: rgba(0, 171, 48, 0.2);
+	background-color: gray;
 }
 
 #homeSignup {
@@ -14,4 +14,15 @@ h1 {text-align: center;}
 
 #center {
 	text-align: center;
+}
+
+#Login{
+	background-color: teal;
+}
+#Sign_up{
+	background-color: green;
+}
+
+#login{
+	background-color: teal;
 }

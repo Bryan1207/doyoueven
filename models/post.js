@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-        //this.belongsTo(models.board);
+        // this.belongsTo(models.board);
         //this.belongsTo(models.user);
         // associations can be defined here
       }

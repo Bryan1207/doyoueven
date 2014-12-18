@@ -1,6 +1,6 @@
 {
   "development": {
-    "database": "biceps",
+    "database": "bicepsdb",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
